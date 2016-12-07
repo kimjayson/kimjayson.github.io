@@ -2,25 +2,25 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://blog.me115.com
+url: http://www.kjson.org
 date_format: "ordinal"
-title: 大CC
-subtitle: "嘿！北京"
-description: "大CC的个人博客"
-keywords: 大CC,博客,计算机,互联网,创业,时间管理,个人提升,木书架网
+title: kjson
+subtitle: "---------"
+description: "kjson的个人博客"
+keywords: kjson,博客,计算机,互联网,创业,时间管理,个人提升
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
-source_code: https://github.com/me115/me115.github.io
+source_code: https://github.com/kinjayson/kimjayson.github.io
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: 大CC
+author: kjson
 organization: Toutiao, Inc.
 organization_url: https://www.toutiao.com
 location: Beijing, China
-email: me115@126.com
+email: i@kjson.org
 
 # ---------------- #
 #    Navigation    #
@@ -79,12 +79,12 @@ collections:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-github_username: me115
-douban_username: me115
-facebook_username: me115
-weibo_username: me115
-zhihu_username: me115
-twitter_username: me115
+github_username: kimjayson
+douban_username: kimjayson
+facebook_username: kimjayson
+weibo_username: kimjayson
+zhihu_username: kimjayson
+twitter_username: kimjayson
 
 # ---------------- #
 #      Comments    #
@@ -93,8 +93,8 @@ twitter_username: me115
 comments_provider: disqus
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
-duoshuo_username: me115
-disqus_username: me115
+duoshuo_username: kimjayson
+disqus_username: kimjayson
 
 # ---------------- #
 #      Datas       #
@@ -102,5 +102,5 @@ disqus_username: me115
 skill_software_keywords: [C++, Python, Golang, Design Patterns]
 skill_mobile_app_keywords: [Android, Reverse Engineering]
 skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
-popular_repos: ['me115/linuxtools_rst','me115/design_patterns', 'csdncommenter', 'me115/design_patterns' ]
+popular_repos: ['kjson/linuxtools_rst','kjson/design_patterns', 'csdncommenter', 'kjson/design_patterns' ]
 contribute_repos: ['']
