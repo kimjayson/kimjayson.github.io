@@ -20,8 +20,6 @@ permalink: /about/
 ## 联系
 
 * GitHub：[@kimjayson](https://github.com/kimjayson)
-* 掘金：[@mzlogin](http://gold.xitu.io/user/570ddaeb2e958a005c63b2da)
-* LinkedIn：[@mazhuang](https://www.linkedin.com/in/mazhuang)
 * 博客：[{{ site.title }}]({{ site.url }})
 * 微博: [@kjson1992](http://weibo.com/kjson1992)
 * 知乎: [@金子](http://www.zhihu.com/people/金子)
