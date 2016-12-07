@@ -91,11 +91,11 @@ zhihu_username: 金子
 #      Comments    #
 # ---------------- #
 # support provider: disqus, duoshuo
-comments_provider: disqus
+comments_provider: duoshuo
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
-duoshuo_username: kjson
-disqus_username: kjson
+duoshuo_username: kjson1992
+disqus_username: kjson1992
 # 在使用 disqus 的时候可点击显示多说评论框
 lazy_load_duoshuo: true
 
