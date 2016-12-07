@@ -13,5 +13,6 @@ permalink: /links/
 * [Connie酱](http://biedan.org)
 * [只宁静不致远](http://zxning.github.io/)
 * [套马杆的汉子](http://lesnica.cn)
+* [devonliu](http://blog.devonliu.org/)
 * [Blog Something](http://chenxiaoyoyo.github.io)
 * [kjson](http://kjson.org)
