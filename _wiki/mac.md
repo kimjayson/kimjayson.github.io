@@ -117,3 +117,34 @@ zy3770994vqg83xvmbc9pd0m0000gn
 ### WireShark
 
 使用 WireShark 1.99 开发版，可以不依赖于 X11，界面基于 Qt，更加美观，符合 Mac 界面风格。
+
+### 截图
+
+| 功能               | 快捷键       |
+|:-------------------|:-------------|
+| 全屏截图保存到桌面 | Cmd-S-3      |
+| 选区截图保存到桌面 | Cmd-S-4      |
+| 窗口截图保存到桌面 | Cmd-S-4 空格 |
+| QQ 截图            | Cmd-S-A      |
+
+去除窗口截图时的阴影：
+
+```sh
+defaults write com.apple.screencapture disable-shadow -bool TRUE
+Killall SystemUIServer
+```
+
+如果要保留窗口截图时的阴影，则将 TRUE 改为 FALSE。
+
+### iBooks 里的电子书保存路径
+
+`/Users/<username>/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks/Books`
+
+### 安装 mpv 没有图形界面
+
+使用 `brew options mpv` 可以看到有个 `--with-bundle` 是安装时创建 .app 文件。
+
+```sh
+brew install mpv --with-bundle
+brew linkapps mpv
+```

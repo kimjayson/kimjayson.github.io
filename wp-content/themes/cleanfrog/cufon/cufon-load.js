@@ -1,1 +1,0 @@
-Cufon.replace('#header h1');

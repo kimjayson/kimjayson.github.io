@@ -32,13 +32,6 @@ keywords: Git, 版本控制
 
 ### Q&A
 
-
-#### 生成ssh key
-
-```shell
-ssh-keygen -t rsa -C "me115@126.com"
-```
-
 #### 如何解决gitk中文乱码，git ls-files 中文文件名乱码问题？
 
 在~/.gitconfig中添加如下内容
@@ -49,9 +42,9 @@ ssh-keygen -t rsa -C "me115@126.com"
 [gui]
    encoding = utf-8
 [i18n]
-   commitencoding = utf-8 
+   commitencoding = utf-8
 [svn]
-   pathnameencoding = utf-8 
+   pathnameencoding = utf-8
 ```
 
 参考 <http://zengrong.net/post/1249.htm>
@@ -62,6 +55,26 @@ ssh-keygen -t rsa -C "me115@126.com"
 git stash
 git pull
 git stash pop
+```
+
+#### stash
+
+查看 stash 列表：
+
+```
+git stash list
+```
+
+查看某一次 stash 的改动文件列表（不传最后一个参数默认显示最近一次）：
+
+```
+git stash show stash@{0}
+```
+
+以 patch 方式显示改动内容
+
+```
+git stash show -p stash@{0}
 ```
 
 #### 如何合并 fork 的仓库的上游更新？
@@ -226,3 +239,37 @@ git am 0001-Update.patch
 ```
 
 与 `git apply` 不同，这会直接 add 和 commit。
+
+#### 只下载最新代码
+
+```
+git clone --depth 1 git://xxxxxx
+```
+
+这样 clone 出来的仓库会是一个 shallow 的状态，要让它变成一个完整的版本：
+
+```
+git fetch --unshallow
+```
+
+或
+
+```
+git pull --unshallow
+```
+
+#### 基于某次 commit 创建分支
+
+```sh
+git checkout -b test 5234ab
+```
+
+表示以 commit hash 为 `5234ab` 的代码为基础创建分支 `test`。
+
+#### 恢复单个文件到指定版本
+
+```sh
+git reset 5234ab MainActivity.java
+```
+
+恢复 MainActivity.java 文件到 commit hash 为 `5234ab` 时的状态。
