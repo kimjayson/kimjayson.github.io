@@ -17,8 +17,6 @@
 
 **[在线预览 &rarr;](http://kjson.org)**
 
-![screenshot home](http://kjson.org/assets/images/screenshots/home.png)
-
 ## Fork 指南
 
 Fork 本项目之后，还需要做一些事情才能让你的页面「正确」跑起来。
