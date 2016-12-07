@@ -22,8 +22,8 @@ permalink: /about/
 * GitHub：[@kimjayson](https://github.com/kimjayson)
 * 博客：[{{ site.title }}]({{ site.url }})
 * 微博: [@kjson1992](http://weibo.com/kjson1992)
-* 知乎: [@金子](http://www.zhihu.com/people/金子)
-* 豆瓣: [@kjson](http://www.douban.com/people/kjson)
+* 知乎: [@金子](http://www.zhihu.com/people/jin-zi-26-14)
+* 豆瓣: [@kjson](http://www.douban.com/people/136924817)
 
 ## Skill Keywords
 
