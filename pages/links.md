@@ -14,5 +14,6 @@ permalink: /links/
 * [只宁静不致远](http://zxning.github.io/)
 * [套马杆的汉子](http://lesnica.cn)
 * [devonliu](http://blog.devonliu.org/)
+* [Thomas Chan](http://chenjunhao.cn)
 * [Blog Something](http://chenxiaoyoyo.github.io)
 * [kjson](http://kjson.org)
