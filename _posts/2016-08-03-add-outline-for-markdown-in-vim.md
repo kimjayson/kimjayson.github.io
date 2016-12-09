@@ -19,7 +19,7 @@ keywords: Vim, Markdown, Outline
 
 ## 最终效果
 
-我的完整 Vim 配置托管在 GitHub，可供参考：[config-files](https://github.com/mzlogin/config-files)
+我的完整 Vim 配置托管在 GitHub，可供参考：[config-files](https://github.com/kimjayson/config-files)
 
 ![](/images/posts/vim/vim-markdown-outline.png)
 
