@@ -14,8 +14,10 @@ permalink: /about/
 
 ## 坚信
 
-* 熟能生巧
+* 做自己喜欢的事
 * 努力改变人生
+* 不过二手的生活
+* 任何时候开始都不算晚
 
 ## 联系
 
@@ -34,16 +36,3 @@ permalink: /about/
     {% endfor %}
 </div>
 
-#### Mobile Developer Keywords
-<div class="btn-inline">
-    {% for keyword in site.skill_mobile_app_keywords %}
-    <button class="btn btn-outline" type="button">{{ keyword }}</button>
-    {% endfor %}
-</div>
-
-#### Windows Developer Keywords
-<div class="btn-inline">
-    {% for keyword in site.skill_windows_keywords %}
-    <button class="btn btn-outline" type="button">{{ keyword }}</button>
-    {% endfor %}
-</div>
