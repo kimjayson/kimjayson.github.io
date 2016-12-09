@@ -76,7 +76,8 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
-
+source: .
+destination: ../my-site
 repository: kimjayson/kimjayson.github.io
 
 # ---------------- #
