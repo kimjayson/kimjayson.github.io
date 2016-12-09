@@ -33,7 +33,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
    网站的配置基本都集中在 \_config.yml 文件中，将其中与个人信息相关的部分替换成你自己的，比如网站的 title、subtitle、duoshuo 和 Disqus 的用户名等。
    如果使用 duoshuo 需要在官网创建站点。
-   **注意：** 因为 Disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus\_username 修改成你自己的。我对该缺陷的记录见 [Issues#2][3]。
+   **注意：** 因为 Disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus\_username 修改成你自己的。
 
 4. 删除我的文章与图片。
 
@@ -74,4 +74,3 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
-[3]: https://github.com/mzlogin/mzlogin.github.io/issues/2
