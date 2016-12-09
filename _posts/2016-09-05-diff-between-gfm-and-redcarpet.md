@@ -8,7 +8,7 @@ keywords: markdown, GFM, Redcarpet
 
 GFM 即 [GitHub Flavored Markdown][1]，是 GitHub 用在 Respository、Issues、Comments 和 Pull requests 里的一种 Markdown 引擎，它与标准 Markdown 有所区别，增加了一些 GitHub 自己扩展的功能。
 
-[Redcarpet][2] 是另一种 Markdown 引擎，我的基于 GitHub Pages 的[博客][3]采用它来解析 md 文件，\_config.yml 文件里的配置如下：
+[Redcarpet][2] 是另一种 Markdown 引擎，我的基于 GitHub Pages 采用它来解析 md 文件，\_config.yml 文件里的配置如下：
 
 ```
 markdown: redcarpet
@@ -51,8 +51,6 @@ redcarpet:
 GFM 与 Redcarpet 支持对 `#`、`##` 和 `###` 这样的标题自动生成锚点链接，只不过在生成的链接 url 上会有少许差异。
 
 **当然，强烈建议在标题中不要使用奇怪的符号。**
-
-> 在这里做个小广告：如果你使用 Vim 编辑 Markdown，那可以试试我写的能自动生成 GFM 和 Redcarpet 这两种风格 TOC 的 Vim 插件 [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)。
 
 *共同点：*
 
@@ -178,7 +176,7 @@ GFM 自己添加的一些特性我甚是喜欢，可惜在 GitHub Pages 里使�
 
 #### Emoji
 
-*Update 2015-12-06 参见 [Emoji on GitHub Pages][8], GitHub Pages 现在也支持使用 Emoji 表情啦！:+1::+1::+1:*
+*参见 [Emoji on GitHub Pages][8], GitHub Pages 竟然早就开始支持使用 Emoji 表情啦！:+1::+1::+1:*
 
 GitHub Pages 如果能使用这个，文章一定生动不少。
 
@@ -189,7 +187,6 @@ GitHub Pages 如果能使用这个，文章一定生动不少。
 
 [1]: https://help.github.com/articles/github-flavored-markdown/
 [2]: https://github.com/vmg/redcarpet
-[3]: http://mzlog.com
 [4]: https://github.com/vmg/redcarpet/issues/379
 [5]: https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments
 [6]: https://help.github.com/articles/writing-on-github/
