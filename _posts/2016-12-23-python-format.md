@@ -6,8 +6,6 @@ description: 格式化字符串format。
 keywords: 基础, Python, 格式化
 ---
 
-### 概述
-
 format是是python2.6新增的一个格式化字符串的方法，相对于老版的%格式方法，它有很多优点:
 
 1.单个参数可以多次输出，参数顺序可以不相同
@@ -175,6 +173,6 @@ print("{!a}".format('测'))  # '\u6d4b'
 
 **注意:**ascii() 3.0以上才有的函数，python2使用会报错。
 
-
+参考：<https://docs.python.org/3/library/string.html#grammar-token-conversion>
 
 
