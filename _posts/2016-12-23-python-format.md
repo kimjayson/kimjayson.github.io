@@ -147,7 +147,7 @@ print(f('Jin','Tom'))
 
 ##### 3. 格式化datetime
 ```
-now=datetime.now()
+now=datetime.datetime.now()
 print('{:%Y-%m-%d %X}'.format(now))
 ```
 这个要比python的datetime,time简单的多
