@@ -38,62 +38,93 @@ keywords: 算法，Fibonacci
 
 f(n) 的规律符合 Fibonacci 数列的规律，它与 Fibonacci 的区别是 Fibonacci 的前两个元素是 1，1，而 f(n) 的规律是 1，2，即可知有 `f(n)=fibo(n+1)`。
 
-### 简单的 C++ 实现
+### 简单的 Python 实现
 
-```cpp
-#include <iostream>
-using namespace std;
+```
+# 初级 普通函数 树形递归
+def fib1(n):
+    if n<=2 :
+        return 1
+    else:
+        return fib1(n-1)+fib1(n-2)
 
-// 非递归写法
-int fibo(int n)  // 获取 Fibonacci 数列的第 N 项值
-{
-    if(n == 1 || n == 2)
-        return 1;
-    else
-    {
-        int a = 1;
-        int b = 1;
-        int tmp;
-        for(int i = 3; i <= n; ++ i)
-        {
-            tmp = a;
-            a = b;
-            b += tmp;
-        }
-        return b;
-    }
-}
 
-//// 递归写法
-//int fibo(int n)
-//{
-//    if(n == 1 || n == 2)
-//        return 1;
-//    else
-//        return fibo(n-1) + fibo(n-2);
-//}
+# 中级 匿名函数 树形递归
+fib2=lambda n:1 if n<=2 else fib2(n-1)+fib2(n-2)
 
-int main()
-{
-    cout << "请输入楼梯的级数：";
 
-    int n;
-    cin >> n;
+# 高级 迭代
+def fib3(n):
+    x, y = 0, 1
+    while(n):
+        x, y, n = y, x+y, n-1 # 元组赋值
+    return x
 
-    int sum;
 
-    //if(1==n)
-    //    sum = 1;
-    //else if (2==n)
-    //    sum = 2;
-    //else
-    //{
-    //    sum = 2 * fibo(n-1) + fibo(n-2);
-    //}
-    sum = fibo(n+1);
+# 高级 尾递归
+def fib4(n):
+    def fib_iter(n,x,y):
+        if n==0 : return x
+        else : return fib_iter(n-1,y,x+y)
 
-    cout << "共有 " << sum << " 种跳法。" << endl;
+    return fib_iter(n,0,1)
 
-    return 0;
-}
+
+# 高级 线性代数 二元向量[x,y]T [[1,0],[1,1]]*[x,y]T=[y,x+y]T 复杂度n
+def fib5(n):
+    def m1(a,b):
+        m = [
+            [a[0][0] * b[0][0] + a[0][1] * b[1][0],
+             a[0][0] * b[0][1] + a[0][1] * b[1][1]
+             ],
+            [a[1][0] * b[0][0] + a[1][1] * b[1][0],
+             a[1][0] * b[1][0] + a[1][1] * b[1][1]
+             ]
+        ]
+        return m
+    def m2(a,b):
+        m = [
+            a[0][0] * b[0][0] + a[0][1] * b[1][0],
+            a[1][0] * b[0][0] + a[1][1] * b[1][0]
+        ]
+        return m
+    return m2(reduce(m1,[[[0,1],[1,1]] for i in range(n)]),[[0],[1]])[0]
+
+
+a = fib5(10)
+print(a)
+
+
+# 线性代数 logN
+def fib(n):
+    lhm = [[0, 1], [1, 1]]
+    rhm = [[0], [1]]
+    em = [[1, 0], [0, 1]]
+
+    # multiply two matrixes
+    def matrix_mul(lhm, rhm):
+        # initialize an empty matrix filled with zero
+        result = [[0 for i in range(len(rhm[0]))] for j in range(len(rhm))]
+        print(result)
+        # multiply loop
+        for i in range(len(lhm)):
+            for j in range(len(rhm[0])):
+                for k in range(len(rhm)):
+                    result[i][j] += lhm[i][k] * rhm[k][j]
+        return result
+
+    def matrix_square(mat):
+        return matrix_mul(mat, mat)
+
+    # quick transform 类比自然数的快速求幂
+    def fib_iter(mat, n):
+        if not n:
+            return em
+        elif (n % 2):
+            return matrix_mul(mat, fib_iter(mat, n - 1))
+        else:
+            return matrix_square(fib_iter(mat, n / 2))
+
+    return matrix_mul(fib_iter(lhm, n), rhm)[0][0]
+
 ```
