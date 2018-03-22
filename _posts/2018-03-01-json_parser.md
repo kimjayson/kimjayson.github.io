@@ -157,12 +157,12 @@ def parse(jsonStr):
 
 ### 后续改进
 
-> 1.封装类
-> 2.处理空白，支持转义字符，unnicode转义符\u6211
-> 3.做json序列器
-> 4.做json格式化输出器
+> 1. 封装类
+> 2. 处理空白，支持转义字符，unnicode转义符\u6211
+> 3. 做json序列器
+> 4. 做json格式化输出器
 
 
-代码地址：https://github.com/kimjayson/anyParser
+代码地址：<https://github.com/kimjayson/anyParser>
 
 [转载请注明作者]
