@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: kjson
 subtitle: "太初有道，神谕，import light，于是便有光"
 description: "kjson的个人博客"
-keywords: kjson, kimjayson, 编程, 数据, python, 个人成长
+keywords: kjson, kimjayson, 编程, 数据, python, php, 个人成长
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -17,8 +17,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: kjson
-organization: xxx, Inc.
-organization_url:  
+organization: DiDi, Inc.
+organization_url: http://www.xiaojukeji.com 
 location: Beijing, China
 email: kinjay1992@163.com
 
@@ -86,7 +86,7 @@ repository: kimjayson/kimjayson.github.io
 github_username: kimjayson
 douban_username: 136924817
 weibo_username: kjson1992
-zhihu_username: jin-zi-26-14
+zhihu_username: kjson
 
 # ---------------- #
 #      Comments    #
@@ -110,4 +110,4 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, Python, PHP, SQL, Design Patterns]
+skill_software_keywords: [Python, PHP, Go, SQL, Docker]
